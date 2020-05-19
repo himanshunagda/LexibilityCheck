@@ -6,7 +6,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites ###
 Nodejs
+
 MongoDB (Install mongoDB on local system using https://docs.mongodb.com/manual/administration/install-community/)
+
 Expressjs
 
 ### Development Setup ###
