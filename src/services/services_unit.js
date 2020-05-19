@@ -15,7 +15,7 @@ describe('lexibal density check tests', () => {
         it("Test exported functions", function () {
             assert.property(services, 'calDensity');
             assert.property(services, 'create');
-            assert.property(services, 'retrieveWords');
+            assert.property(services, 'find');
             assert.property(services, 'complexity');
             assert.property(services, 'complexityVerbose');
         });

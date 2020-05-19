@@ -8,22 +8,19 @@ const services = require('../services/services.js');
  * @route {GET} /getAllWords
  */
 server.route("/getAllWords").get(services.find);
+
 /**
  * @name Post add word to wordList
  * @route {POST} /addWords
  */
 server.route("/addWords").post(services.create);
-/**
- * @name Get wordList non lexical words
- * @route {GET} /getwordList
- */
-server.route("/getwordList").get(services.retrieveWords);
 
 /**
  * @name POST calculate lexical density of sentence
  * @route {POST} /complexity
  */
 server.route("/complexity").post(services.complexity);
+
 /**
  * @name POST calculate lexical density of multiple sentences
  * @route {POST} /complexity

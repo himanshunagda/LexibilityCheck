@@ -32,20 +32,6 @@ const create = async (req, res) => {
 }
 
 /**
- * Retrieve non lexical Words from MongoDB
- * @param {*} req the request object
- * @return {Object | Error} the data object containing the parsed data
- */
-const retrieveWords = async (req, res) => {
-    const client = await MONGO.connect(dburl);
-    var db = await client.db('density');
-    const dbWord = db.collection('dbWord');
-    const allData = await dbWord.find().toArray();
-    let nonLexicalWords = allData.map(x => x.word);
-    res.send({ data: nonLexicalWords });
-};
-
-/**
  * Calculate lexical density
  * @param {*} input the input from user
  * @param {*} nonLexicalArr non lexical mapped array
@@ -134,7 +120,6 @@ const complexityVerbose = async (req, res) => {
 module.exports = {
     find,
     create,
-    retrieveWords,
     calDensity,
     complexity,
     complexityVerbose
