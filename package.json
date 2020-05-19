@@ -16,6 +16,7 @@
         "chai": "^4.2.0",
         "chai-as-promised": "^7.1.1",
         "express": "^4.16.4",
+        "mocha": "^7.1.2",
         "mongodb": "^3.5.7",
         "sinon": "^9.0.2",
         "sinon-chai": "^3.5.0"
