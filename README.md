@@ -6,7 +6,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites ###
 Nodejs
-MongoDB
+MongoDB (Install mongoDB on local system using https://docs.mongodb.com/manual/administration/install-community/)
 Expressjs
 
 ### Development Setup ###
@@ -38,6 +38,16 @@ Explain how to install all development dependencies.
   }`
   
   test expression should be a sentence for which lexibal density has to be calculated.
+  
+  Make HTTPS calls on http://localhost:8080/lexicalDensity/addWords to add new words to non lexical words list.
+  
+   Required paramter in a body of request:
+ 
+ `{
+	"word": "enter your word here"
+  }`
+  
+  Make HTTPS calls on http://localhost:8080/lexicalDensity/getAllWords to get all non lexical words to non lexical words list.
   
   ### Project Requirements ###
  You have been tasked to build an API where a user can query the complexity of a text
