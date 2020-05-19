@@ -1,0 +1,25 @@
+{
+    "name": "lexibilityCheck",
+    "description": "API implementation for calculating lexical density",
+    "scripts": {
+        "start": "node index.js",
+        "test": "mocha src/services/services_unit.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com:himanshunagda/LexibilityCheck.git"
+    },
+    "license": "MIT",
+    "author": "Himanshu Nagda",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "chai": "^4.2.0",
+        "chai-as-promised": "^7.1.1",
+        "express": "^4.16.4",
+        "mongodb": "^3.5.7",
+        "sinon": "^9.0.2",
+        "sinon-chai": "^3.5.0"
+    },
+    "devDependencies": {},
+    "version": "1.0.0"
+}
